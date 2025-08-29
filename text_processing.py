@@ -37,3 +37,25 @@ except FileNotFoundError:
     print("Error: output.txt not found.")
 except IOError:
     print("Error: Could not read from the output file.")
+
+# Error Handling Lab 🧪
+def read_file_with_error_handling():
+    # Ask the user for a filename
+    filename = input("Please enter the filename to read (ensure it exists in the same directory): ")
+
+    try:
+        # Attempt to open and read the file
+        with open(filename, "r") as file:
+            content = file.read()
+            print("\nFile content:")
+            print(content)
+
+    except FileNotFoundError:
+        print(f"Error: The file '{filename}' does not exist.")
+    except IOError:
+        print(f"Error: Could not read the file '{filename}'.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+# Call the function to execute
+read_file_with_error_handling()

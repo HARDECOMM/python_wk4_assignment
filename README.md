@@ -8,6 +8,7 @@ This Python script processes a text input, counts the number of words, and conve
 - Counts the total number of words.
 - Converts the text to uppercase.
 - Writes the results, including the word count, to `output.txt`.
+- Prompts the user for a filename and handles errors if the file doesn’t exist or can’t be read.
 
 ## How It Works
 
@@ -19,6 +20,7 @@ This Python script processes a text input, counts the number of words, and conve
    - Converts the content to uppercase.
 4. **Write Results to `output.txt`**: The script creates or overwrites `output.txt` with the word count and the uppercase text.
 5. **Display Output**: Finally, it reads and displays the contents of `output.txt`.
+6. **Error Handling Lab**: The script allows the user to input a filename and handles errors if the specified file does not exist or cannot be read.
 
 ## Usage
 
